@@ -1,0 +1,69 @@
+ *{
+       padding:0;
+       margin:0;
+     
+    }
+    .mybody{
+       background: url(mybackground1.png);
+       background-repeat: no-repeat;
+       min-height: 100vh; 
+       background-size: 100vw 100vh;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    #board{
+       background: linear-gradient(to right,rgb(4, 2, 35),rgb(23, 8, 108)); 
+       width: 80vh;
+       height: 70vh;
+       border: 10px solid rgb(228, 176, 45);
+       border-radius: 15%;
+       box-shadow: 7px 10px 8px rgb(8, 8, 8),-8px -10px 5px rgb(0, 0, 0);
+       display: grid;
+        grid-template-rows: repeat(20,1fr);
+        grid-template-columns: repeat(20,1fr);
+}
+.head{
+   
+       background:linear-gradient(green,rgb(24, 224, 40));
+       border-radius: 60%;
+       border: 2px solid rgb(52, 225, 90);
+       box-shadow: 3px 4px 4px black;
+       scale: 1.2;
+
+}
+.snake{
+  background-color: rgb(49, 216, 49);
+   border-radius: 40%;
+   box-shadow: 3px 4px 4px black;
+}
+.food{
+       background:linear-gradient(rgb(255, 18, 18),rgb(249, 131, 35));  
+           scale: 0.7;
+       border-radius: 40%; 
+       box-shadow: 5px 4px 5px rgb(0, 0, 0);   
+}
+#scores{
+   position: absolute;
+   top: 10px;
+   right:2px;
+   background: rgb(224, 163, 49) ;
+   font-size: 1.8rem;
+   font-weight: bold;
+   padding: 15px;
+   border-radius: 30%;
+   border: 2px solid;
+   box-shadow: 3px 4px 2px ;
+}
+#highscores{
+   position: absolute;
+   top: 10px;
+   left:5px;
+   background: rgb(224, 163, 49) ;
+   font-size: 1.4rem;
+   font-weight: bold;
+   padding: 15px;
+   border-radius: 30%;
+   border: 2px solid;
+   box-shadow: 3px 4px 2px ;
+}
